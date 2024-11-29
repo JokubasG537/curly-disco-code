@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: gray;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    background-color: #040714;
+}
+
+.cta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .login-button {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 21%;
+
+        a {
+            margin-right: 25px; 
+            margin-top: 7px;
+            font-size: 1.25em;
+            text-decoration: none;
+            color:white;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 18px 15px 18px;
+            border: 2px solid #a7a8a9;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+           
+        }
+    }
+
+.cta-wrapper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cta-wrapper {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        h1 {
+            font-size: 39px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .big {
+            font-size: 1.3em;
+            color: white
+        }
+
+        .header-desc {
+            color: #01cfe1;
+        }
+        
+        .email {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 0;
+            width: 60%;
+            border-radius: 5px; 
+            overflow: hidden; 
+          
+            input {
+              padding-top: 20px;
+              padding-bottom: 10px;
+              border: none; 
+              border-radius: 0; 
+              background-color: #31343e;
+              padding-bottom: 20px;
+            }
+          
+            button {
+              border: none; 
+              background-color: #02d6e8;
+              font-size: 1.2em;
+              
+            }
+          }
+
+          .slimmer-text {
+            font-size: 1.1em;
+            color: #01cfe1;
+          }
+
+          .small {
+            font-size: 0.87em;
+            color: #01cfe1;
+          }
+
+          img {
+            width: 80%;
+          }
+          
+
+    }
+}
+  
+}
+
+#movies {
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/47f99bd583c0815bce8727d1e891897cf4f8606584f9430102b1ceb940142739/original);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vh;
+    color: white;
+    
+    
+
+}
+
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .faq-section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        
+
+        details {
+            background-color: #13151d;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            
+
+            
+            summary {
+                font-size: 1.2em;
+                color: white;
+                cursor: pointer;
+                list-style: none; 
+                font-weight: bolder;
+                
+            }
+
+            .faq-span {
+                color: #a7a8a9;
+                font-size: 1em;
+               
+
+            }
+
+            ul,
+            ol {
+                color: #a7a8a9;
+                font-size: 16px;
+                padding: 0 24px;
+
+                li {
+                    margin-top: 18px;
+                    margin-bottom: 18px;
+
+                }
+            }
+
+            a {
+                color: #a7a8a9;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .compatibility-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .compatibility-column-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .column-element-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                align-items: center;
+                color: #a7a8a9;
+            }
+
+            .c-column-element-1 {
+                font-weight: bolder;
+                font-size: 1.2em;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #0e0b14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .footer-wrapper {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        width: 80%;
+    
+    
+
+    a {
+        color: #dcdcdd;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+
+    span {
+        color: #dcdcdd;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .footer-column-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+                    //learn-more-wrapper controls first row wrapper columns as a parent element
+        .learn-more-wrapper {            
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            gap: 10px;
+            
+
+            .f-elements-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+            }
+        }
+    }
+
+
+
+
+    .footer-row-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        
+
+        img {
+            width: 30px;
+        }
+
+        a {
+            font-size: 1em;
+        }
+    }
+
+    .copyright {
+        color: #a7a8a9;
+        font-size: 0.75em;
+    }
+}
+}

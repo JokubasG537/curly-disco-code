@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: gray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  background-color: #040714;
+}
+
+.cta {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cta .login-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 21%;
+}
+.cta .login-button a {
+  margin-right: 25px;
+  margin-top: 7px;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px 18px 15px 18px;
+  border: 2px solid #a7a8a9;
+  border-radius: 5px;
+}
+.cta .login-button a:hover {
+  background-color: white;
+  color: black;
+}
+.cta .cta-wrapper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper h1 {
+  font-size: 39px;
+  font-weight: bolder;
+  color: white;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .big {
+  font-size: 1.3em;
+  color: white;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .header-desc {
+  color: #01cfe1;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .email {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0;
+  width: 60%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .email input {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 0;
+  background-color: #31343e;
+  padding-bottom: 20px;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .email button {
+  border: none;
+  background-color: #02d6e8;
+  font-size: 1.2em;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .slimmer-text {
+  font-size: 1.1em;
+  color: #01cfe1;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .small {
+  font-size: 0.87em;
+  color: #01cfe1;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper img {
+  width: 80%;
+}
+
+#movies {
+  background-image: url(https://cnbl-cdn.bamgrid.com/assets/47f99bd583c0815bce8727d1e891897cf4f8606584f9430102b1ceb940142739/original);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+  color: white;
+}
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.section-5 h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.section-5 .faq-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.section-5 .faq-section details {
+  background-color: #13151d;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-5 .faq-section details summary {
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  font-weight: bolder;
+}
+.section-5 .faq-section details .faq-span {
+  color: #a7a8a9;
+  font-size: 1em;
+}
+.section-5 .faq-section details ul,
+.section-5 .faq-section details ol {
+  color: #a7a8a9;
+  font-size: 16px;
+  padding: 0 24px;
+}
+.section-5 .faq-section details ul li,
+.section-5 .faq-section details ol li {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.section-5 .faq-section details a {
+  color: #a7a8a9;
+  text-decoration: underline;
+}
+
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.section-6 h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.section-6 .compatibility-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.section-6 .compatibility-wrapper .compatibility-column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.section-6 .compatibility-wrapper .compatibility-column-1 .column-element-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  color: #a7a8a9;
+}
+.section-6 .compatibility-wrapper .compatibility-column-1 .c-column-element-1 {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+.section-6 .compatibility-wrapper .compatibility-column-1 img {
+  width: 100%;
+}
+
+footer {
+  background-color: #0e0b14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+footer .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+}
+footer .footer-wrapper a {
+  color: #dcdcdd;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+footer .footer-wrapper span {
+  color: #dcdcdd;
+  text-decoration: none;
+  font-size: 1em;
+}
+footer .footer-wrapper .footer-column-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+footer .footer-wrapper .footer-column-wrapper .learn-more-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
+footer .footer-wrapper .footer-column-wrapper .learn-more-wrapper .f-elements-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-wrapper .footer-row-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer-wrapper .footer-row-1 img {
+  width: 30px;
+}
+footer .footer-wrapper .footer-row-1 a {
+  font-size: 1em;
+}
+footer .footer-wrapper .copyright {
+  color: #a7a8a9;
+  font-size: 0.75em;
+}/*# sourceMappingURL=disney-part-2.css.map */
