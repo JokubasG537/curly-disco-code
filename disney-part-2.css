@@ -23,9 +23,14 @@ main {
 }
 
 .cta {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url(//cnbl-cdn.bamgrid.com/assets/2cefea02ab968e8f5d0a01b8b9456c578faab6a35808c1c4472546b0a369181e/original);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
 }
 .cta .login-button {
   display: flex;
@@ -71,7 +76,7 @@ main {
   color: white;
 }
 .cta .cta-wrapper-wrapper .cta-wrapper .header-desc {
-  color: #01cfe1;
+  color: #a7a8a9;
 }
 .cta .cta-wrapper-wrapper .cta-wrapper .email {
   display: grid;
@@ -92,18 +97,23 @@ main {
 .cta .cta-wrapper-wrapper .cta-wrapper .email button {
   border: none;
   background-color: #02d6e8;
+  color: #02172a;
   font-size: 1.2em;
+}
+.cta .cta-wrapper-wrapper .cta-wrapper .email button:hover {
+  background-color: #02b6c5;
+  color: black;
 }
 .cta .cta-wrapper-wrapper .cta-wrapper .slimmer-text {
   font-size: 1.1em;
-  color: #01cfe1;
+  color: #a7a8a9;
 }
 .cta .cta-wrapper-wrapper .cta-wrapper .small {
   font-size: 0.87em;
-  color: #01cfe1;
+  color: #a7a8a9;
 }
 .cta .cta-wrapper-wrapper .cta-wrapper img {
-  width: 80%;
+  width: 50%;
 }
 
 #movies {
@@ -111,8 +121,195 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100vh;
   color: white;
+}
+#movies .movies-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  margin-top: 10%;
+  margin-left: 40px;
+}
+#movies .movies-wrapper h2 {
+  font-size: 36px;
+}
+#movies .movies-wrapper p {
+  color: #a7a8a9;
+}
+#movies .movies-wrapper .copyright {
+  color: #a7a8a9;
+  font-size: 0.75em;
+}
+
+.plans-table {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.plans-table h2 {
+  font-size: 36px;
+}
+.plans-table .table-wrapper {
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans-table .table-wrapper table {
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+.plans-table .table-wrapper table td,
+.plans-table .table-wrapper table th {
+  padding: 30px 20px;
+  text-align: center;
+}
+.plans-table .table-wrapper table thead {
+  border-bottom: 1px solid white;
+  position: sticky;
+}
+.plans-table .table-wrapper table thead .highlight {
+  background-color: #1d1f2b;
+}
+.plans-table .table-wrapper table thead .highlight a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #02d6e8;
+  color: #02172a;
+  font-size: 1.2em;
+  padding: 15px 55px;
+  border-radius: 5px;
+  border-bottom: none;
+}
+.plans-table .table-wrapper table thead .highlight a:hover {
+  background-color: #02b6c5;
+  color: black;
+}
+.plans-table .table-wrapper table thead .highlight-1 {
+  background-color: #1d1f2b;
+  font-size: 0.9em;
+}
+.plans-table .table-wrapper table thead .gray-smaller-txt {
+  font-size: 0.9em;
+  color: #a7a8a9;
+}
+.plans-table .table-wrapper table thead a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #136878;
+  color: rgb(182, 182, 182);
+  font-size: 1.2em;
+  padding: 15px 55px;
+  border-radius: 5px;
+  display: inline-block;
+  border-bottom: none;
+}
+.plans-table .table-wrapper table thead a:hover {
+  background-color: #105866;
+  color: #a7a8a9;
+}
+.plans-table .table-wrapper table thead th,
+.plans-table .table-wrapper table thead td {
+  padding: 15px 20px;
+}
+.plans-table .table-wrapper table tbody {
+  border-bottom: 1px solid gray;
+}
+.plans-table .table-wrapper table tbody td,
+.plans-table .table-wrapper table tbody th {
+  border-bottom: 1px solid gray;
+}
+.plans-table .table-wrapper table tbody td {
+  color: #bfbfbf;
+}
+.plans-table .table-wrapper table tbody .bigger-txt {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+.plans-table .table-wrapper table tbody .highlight-2 {
+  font-size: 1em;
+  color: #a7a8a9;
+}
+.plans-table .table-wrapper table tbody .bigger-gray-txt {
+  color: #bfbfbf;
+}
+.plans-table .table-wrapper table tbody .gray-txt {
+  color: #a7a8a9;
+}
+.plans-table .table-wrapper table tbody img {
+  width: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.plans-table .table-wrapper table tbody a {
+  color: white;
+  border-bottom: none;
+}
+.plans-table .table-wrapper table tbody tr:last-child td {
+  border-bottom: none;
+}
+.plans-table .table-wrapper table tbody .highlight-2 {
+  background-color: #1d1f2b;
+}
+.plans-table .conditions {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.8em;
+  color: #a7a8a9;
+}
+.plans-table .conditions a {
+  color: #a7a8a9;
+  font-weight: bold;
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 60px;
+}
+.watch .part-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1800px;
+  gap: 20px;
+}
+.watch .part-1 h2 {
+  font-size: 36px;
+}
+.watch .part-1 p {
+  color: #a7a8a9;
+}
+.watch .part-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 90px;
+}
+.watch .part-2 .icons-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.watch .part-2 .icons-txt-wrapper .blue-icons img {
+  width: 120px;
 }
 
 .section-5 {

@@ -108,7 +108,13 @@ main {
             button {
               border: none; 
               background-color: #02d6e8;
+              color: #02172a;
               font-size: 1.2em;
+
+              &:hover {
+                background-color: #02b6c5;
+                color: black;
+              }
               
             }
           }
@@ -124,7 +130,7 @@ main {
           }
 
           img {
-            width: 80%;
+            width: 50%;
           }
           
 
@@ -171,13 +177,14 @@ main {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 100px;
 
     h2 {
         font-size: 36px;
     }
 
     .table-wrapper {
-        width: 80%;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -207,11 +214,16 @@ main {
                   text-decoration: none;
                   text-transform: uppercase;
                   background-color: #02d6e8;
-                  color: black;
+                  color: #02172a;
                   font-size: 1.2em;
                   padding: 15px 55px;
                   border-radius: 5px;
-                  border-bottom: none; 
+                  border-bottom: none;
+                  
+                  &:hover {
+                    background-color: #02b6c5;
+                    color: black;
+                  }
                 }
               }
           
@@ -236,6 +248,11 @@ main {
                 border-radius: 5px;
                 display: inline-block;
                 border-bottom: none; 
+
+                &:hover {
+                    background-color: #105866;
+                    color: #a7a8a9;
+                  }
               }
               th,
               td {
@@ -244,6 +261,7 @@ main {
             }
           
             tbody {
+                border-bottom: 1px solid gray;
 
                 
             td,
@@ -263,6 +281,8 @@ main {
 
                 .highlight-2 {
                     font-size: 1em;
+                    color: #a7a8a9;
+
                     
                     
                 }
@@ -302,7 +322,7 @@ main {
     }
 
     .conditions {
-        width: 80%;
+        max-width: 800px;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -323,12 +343,14 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 60px;
 
     .part-1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 1800px;
         gap: 20px;
 
         h2 {
@@ -346,6 +368,7 @@ main {
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        gap: 90px;
 
         .icons-txt-wrapper {
             display: flex;
@@ -353,6 +376,8 @@ main {
             align-items: center;
             justify-content: center;
             gap: 20px;
+            text-align: center;
+
         .blue-icons {
             
             img {
