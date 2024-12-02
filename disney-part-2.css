@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -32,10 +32,33 @@ main {
   background-position: 50%;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .cta {
+    background-image: url(//cnbl-cdn.bamgrid.com/assets/e816dfd005541ed9dda496c45bfaf4e5bf0492c276368f95fa02903c4c203ad6/original);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 599px) {
+  .cta {
+    background-image: url(//cnbl-cdn.bamgrid.com/assets/475b89a387cd78419de4706b445864482e80fd1412670d5ef855ddfd41976400/original);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+  }
+}
 .cta .login-button {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 21%;
+}
+@media (max-width: 1600px) {
+  .cta .login-button {
+    padding-bottom: 30%;
+  }
 }
 .cta .login-button a {
   margin-right: 25px;
@@ -86,6 +109,31 @@ main {
   border-radius: 5px;
   overflow: hidden;
 }
+@media (max-width: 1600px) {
+  .cta .cta-wrapper-wrapper .cta-wrapper .email {
+    width: 70%;
+  }
+}
+@media (max-width: 1199px) {
+  .cta .cta-wrapper-wrapper .cta-wrapper .email {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-wrapper-wrapper .cta-wrapper .email {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .cta .cta-wrapper-wrapper .cta-wrapper .email :nth-child(1) {
+    grid-column: 1/3;
+  }
+  .cta .cta-wrapper-wrapper .cta-wrapper .email :nth-child(2) {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
 .cta .cta-wrapper-wrapper .cta-wrapper .email input {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -119,16 +167,36 @@ main {
 #movies {
   background-image: url(https://cnbl-cdn.bamgrid.com/assets/47f99bd583c0815bce8727d1e891897cf4f8606584f9430102b1ceb940142739/original);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: contain;
+  min-height: 100vh;
   color: white;
+  position: relative;
 }
 #movies .movies-wrapper {
   display: flex;
   flex-direction: column;
   gap: 29px;
-  margin-top: 10%;
-  margin-left: 40px;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+@media (max-width: 1199px) {
+  #movies .movies-wrapper {
+    width: 50%;
+    top: 10%;
+  }
+}
+@media (max-width: 839px) {
+  #movies .movies-wrapper {
+    width: 50%;
+    top: 3%;
+  }
+}
+@media (max-width: 768px) {
+  #movies .movies-wrapper {
+    position: relative;
+    top: 20%;
+  }
 }
 #movies .movies-wrapper h2 {
   font-size: 36px;

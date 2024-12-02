@@ -1,0 +1,44 @@
+ 
+  @mixin ultra-large-screen {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+
+ 
+  @mixin extra-large-screen {
+    @media (max-width: 1599px) {
+      @content;
+    }
+  }
+  
+
+  @mixin large-screen {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @mixin medium-large-screen {
+    @media (max-width: 839px) {
+      @content;
+    }
+  }
+
+
+@mixin medium-screen {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  
+
+  @mixin small-screen {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+  
+ 
+  
+
